@@ -711,7 +711,7 @@ class EmrConnection(AWSQueryConnection):
             params['Instances.HadoopVersion'] = hadoop_version
         if ec2_keyname:
             params['Instances.Ec2KeyName'] = ec2_keyname
-	if ec2_subnet_id:
+        if ec2_subnet_id:
             params['Instances.Ec2SubnetId'] = ec2_subnet_id
         if availability_zone:
             params['Instances.Placement.AvailabilityZone'] = availability_zone
